@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
-export default function Scene1(): JSX.Element {
+export default function Scene1() {
   const router = useRouter();
   useEffect(() => { const t = setTimeout(() => router.push("/user"), 7000); return () => clearTimeout(t); }, [router]);
   return (
